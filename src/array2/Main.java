@@ -1,3 +1,5 @@
+package array2;
+
 import com.sun.jdi.Value;
 
 public class Main {
