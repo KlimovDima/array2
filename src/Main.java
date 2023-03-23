@@ -61,9 +61,11 @@ public class Main {
     public static void task1() {
         System.out.println("Задача 2");
         int[] arr = generateRandomArray();
+        int sum = 0;
         for (int j : arr) {
-            System.out.println("Сумма трат за месяц составила: " + j + " рублей");
+            sum += j;
         }
+        System.out.println("Сумма трат за месяц составила: " + sum + " рублей");
     }
 
     public static void task2() {
@@ -88,16 +90,16 @@ public class Main {
         int[] arr = generateRandomArray();
         int sum = 0;
         for (int j : arr) {
-            sum = j + sum;
+            sum += j;
         }
-        double mean = ((double) sum / arr.length) - 1;
+        double mean = ((double) sum / arr.length);
         System.out.println(mean);
     }
 
     public static void task4() {
         System.out.println("Задача 4");
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = reverseFullName.length-1; i >= 0; i--) {
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
             System.out.print(reverseFullName[i]);
         }
     }
